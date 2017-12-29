@@ -76,6 +76,10 @@ app.post('/', function(req, res) {
 
 	} else if (notifyType === "buildInterrupted") {
 		console.log("build interrupted: ", result)
+	} else {
+		console.log("Unknown notifyType: ", notifyType);
+		console.log("request body: ");
+		console.log(reqBody);
 	}
 	
 	
